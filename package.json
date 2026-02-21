@@ -6,7 +6,7 @@
     "engines": {
         "vscode": "^1.70.0"
     },
-    "icon": "icon.png",
+    "icon": "img/icon.png",
     "license": "MIT",
     "publisher": "OmojiP",
     "scripts": {
