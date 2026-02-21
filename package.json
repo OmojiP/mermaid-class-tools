@@ -1,7 +1,7 @@
 {
     "name": "mermaid-class-tools",
-    "displayName": "Mermaid Class Tools",
-    "description": "Markdown内のMermaid記法をアシスト (リネーム / 矢印の向き反転 / 矢印の役割表示)",
+    "displayName": "%displayName%",
+    "description": "%description%",
     "version": "0.1.0",
     "engines": {
         "vscode": "^1.70.0"
@@ -9,10 +9,17 @@
     "icon": "icon.png",
     "license": "MIT",
     "publisher": "OmojiP",
+    "scripts": {
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "vscode:prepublish": "npm run compile",
+        "package": "npx @vscode/vsce package",
+        "audit": "npm audit"
+    },
     "activationEvents": [
         "onLanguage:markdown"
     ],
-    "main": "extension.js",
+    "main": "./out/extension.js",
     "contributes": {
         "languages": [
             {
@@ -25,11 +32,33 @@
         "codeActions": [
             {
                 "language": "markdown",
-                "title": "Mermaid Class Tools"
+                "title": "%codeActionTitle%"
             }
-        ]
+        ],
+        "configuration": {
+            "title": "%configurationTitle%",
+            "properties": {
+                "mermaidClassTools.enableRename": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "%config.enableRename.description%"
+                },
+                "mermaidClassTools.enableArrowActions": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "%config.enableArrowActions.description%"
+                },
+                "mermaidClassTools.enableArrowHover": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "%config.enableArrowHover.description%"
+                }
+            }
+        }
     },
-    "dependencies": {
-        "vsce": "^2.15.0"
+    "devDependencies": {
+        "@types/node": "^22.13.10",
+        "@types/vscode": "^1.70.0",
+        "typescript": "^5.8.2"
     }
 }
