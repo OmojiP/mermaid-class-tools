@@ -1,7 +1,9 @@
 node_modules/
 out/
 *.vsix
-.vscode/
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
 
 npm-debug.log*
 yarn-debug.log*
