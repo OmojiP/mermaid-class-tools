@@ -2,9 +2,9 @@ export type Locale = 'ja' | 'en';
 
 export type LocaleMessages = {
     quickFix: {
-        reverseArrowOnly: string;
-        reverseDirectionOnly: string;
-        reverseArrowAndDirection: string;
+        keepPositionsReverseRelation: string;
+        swapPositionsReverseRelation: string;
+        swapPositionsKeepRelation: string;
     };
     hover: {
         title: string;
@@ -17,9 +17,9 @@ export type LocaleMessages = {
 
 const JA_MESSAGES: LocaleMessages = {
     quickFix: {
-        reverseArrowOnly: '矢印の向きのみ反転（例：a --> b → a <-- b）',
-        reverseDirectionOnly: '矢印の方向を反転（例：a --> b → b --> a）',
-        reverseArrowAndDirection: '矢印の向きと方向を両方反転（例：a --> b → b <-- a）',
+        keepPositionsReverseRelation: '位置関係を保存, 関係方向を逆転（例：a --> b → a <-- b）',
+        swapPositionsReverseRelation: '位置関係を逆転, 関係方向を逆転（例：a --> b → b --> a）',
+        swapPositionsKeepRelation: '位置関係を逆転, 関係方向を保存（例：a --> b → b <-- a）',
     },
     hover: {
         title: 'Mermaid 矢印',
@@ -54,9 +54,9 @@ const JA_MESSAGES: LocaleMessages = {
 
 const EN_MESSAGES: LocaleMessages = {
     quickFix: {
-        reverseArrowOnly: 'Reverse arrow shape only (example: a --> b → a <-- b)',
-        reverseDirectionOnly: 'Reverse relation direction (example: a --> b → b --> a)',
-        reverseArrowAndDirection: 'Reverse both shape and direction (example: a --> b → b <-- a)',
+        keepPositionsReverseRelation: 'Keep node positions, reverse relation direction (example: a --> b → a <-- b)',
+        swapPositionsReverseRelation: 'Swap node positions, reverse relation direction (example: a --> b → b --> a)',
+        swapPositionsKeepRelation: 'Swap node positions, keep relation direction (example: a --> b → b <-- a)',
     },
     hover: {
         title: 'Mermaid Arrow',

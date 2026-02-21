@@ -23,14 +23,14 @@ export function createArrowCodeActionProvider(messages: LocaleMessages): vscode.
             }
 
             const reverseArrowOnlyAction = new vscode.CodeAction(
-                messages.quickFix.reverseArrowOnly,
+                messages.quickFix.keepPositionsReverseRelation,
                 vscode.CodeActionKind.QuickFix
             );
             reverseArrowOnlyAction.edit = new vscode.WorkspaceEdit();
             reverseArrowOnlyAction.edit.replace(document.uri, line.range, text.replace(matchedArrow, reversedArrow));
 
             const reverseDirectionAction = new vscode.CodeAction(
-                messages.quickFix.reverseDirectionOnly,
+                messages.quickFix.swapPositionsReverseRelation,
                 vscode.CodeActionKind.QuickFix
             );
             reverseDirectionAction.edit = new vscode.WorkspaceEdit();
@@ -43,7 +43,7 @@ export function createArrowCodeActionProvider(messages: LocaleMessages): vscode.
             );
 
             const reverseArrowAndDirectionAction = new vscode.CodeAction(
-                messages.quickFix.reverseArrowAndDirection,
+                messages.quickFix.swapPositionsKeepRelation,
                 vscode.CodeActionKind.QuickFix
             );
             reverseArrowAndDirectionAction.edit = new vscode.WorkspaceEdit();
