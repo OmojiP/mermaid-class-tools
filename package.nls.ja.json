@@ -1,0 +1,9 @@
+{
+    "displayName": "Mermaid Class Tools",
+    "description": "Markdown内のMermaid記法をアシスト (リネーム / 矢印の向き反転 / 矢印の役割表示)",
+    "codeActionTitle": "Mermaid Class Tools",
+    "configurationTitle": "Mermaid Class Tools",
+    "config.enableRename.description": "Mermaidコードブロック内でのF2リネーム機能を有効にします。",
+    "config.enableArrowActions.description": "矢印の反転クイックフィックスを有効にします。",
+    "config.enableArrowHover.description": "矢印にマウスオーバーした際の役割説明ホバーを有効にします。"
+}
