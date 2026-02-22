@@ -5,6 +5,7 @@ export const CONFIG_SECTION = 'mermaidClassTools';
 export type FeatureFlags = {
     enableRename: boolean;
     enableArrowActions: boolean;
+    enableArrowCompletion: boolean;
     enableArrowHover: boolean;
 };
 
@@ -14,6 +15,7 @@ export function getFeatureFlags(): FeatureFlags {
     return {
         enableRename: config.get<boolean>('enableRename', true),
         enableArrowActions: config.get<boolean>('enableArrowActions', true),
+        enableArrowCompletion: config.get<boolean>('enableArrowCompletion', true),
         enableArrowHover: config.get<boolean>('enableArrowHover', true),
     };
 }

@@ -2,6 +2,7 @@ import * as vscode from 'vscode';
 import { CONFIG_SECTION, getFeatureFlags } from './config';
 import { getLocaleMessages } from './i18n/messages';
 import { createArrowCodeActionProvider } from './providers/arrowCodeActionProvider';
+import { createArrowCompletionProvider } from './providers/arrowCompletionProvider';
 import { createArrowHoverProvider } from './providers/arrowHoverProvider';
 import { MermaidClassRenameProvider } from './providers/renameProvider';
 
@@ -24,6 +25,25 @@ export function activate(context: vscode.ExtensionContext): void {
                 vscode.languages.registerCodeActionsProvider('markdown', createArrowCodeActionProvider(messages), {
                     providedCodeActionKinds: [vscode.CodeActionKind.QuickFix],
                 })
+            );
+        }
+
+        if (featureFlags.enableArrowCompletion) {
+            featureDisposables.push(
+                vscode.languages.registerCompletionItemProvider(
+                    'markdown',
+                    createArrowCompletionProvider(messages),
+                    '-',
+                    '<',
+                    '.',
+                    'o',
+                    '*',
+                    ')',
+                    'x',
+                    '|',
+                    '{',
+                    '}'
+                )
             );
         }
 

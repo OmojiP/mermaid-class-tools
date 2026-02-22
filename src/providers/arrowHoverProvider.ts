@@ -1,11 +1,17 @@
 import * as vscode from 'vscode';
 import { LocaleMessages } from '../i18n/messages';
+import { getDiagramTypeAtPosition } from '../utils/mermaidContext';
 
 export function createArrowHoverProvider(messages: LocaleMessages): vscode.HoverProvider {
-    const arrows = Object.keys(messages.hover.arrowDescriptions).sort((a, b) => b.length - a.length);
-
     return {
         provideHover(document, position) {
+            const diagramType = getDiagramTypeAtPosition(document, position);
+            if (!diagramType) {
+                return undefined;
+            }
+
+            const arrowDescriptions = messages.hover.arrowDescriptionsByDiagram[diagramType];
+            const arrows = Object.keys(arrowDescriptions).sort((a, b) => b.length - a.length);
             const line = document.lineAt(position.line).text;
 
             for (const arrow of arrows) {
@@ -18,7 +24,7 @@ export function createArrowHoverProvider(messages: LocaleMessages): vscode.Hover
 
                     const isInRange = position.character >= index && position.character <= index + arrow.length;
                     if (isInRange) {
-                        const description = messages.hover.arrowDescriptions[arrow];
+                        const description = arrowDescriptions[arrow];
                         return new vscode.Hover(`**${messages.hover.title}**: \`${arrow}\` — ${description}`);
                     }
 
