@@ -48,6 +48,11 @@
                     "default": true,
                     "description": "%config.enableArrowActions.description%"
                 },
+                "mermaidClassTools.enableArrowCompletion": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "%config.enableArrowCompletion.description%"
+                },
                 "mermaidClassTools.enableArrowHover": {
                     "type": "boolean",
                     "default": true,

@@ -5,5 +5,6 @@
     "configurationTitle": "Mermaid Class Tools",
     "config.enableRename.description": "Mermaidコードブロック内でのF2リネーム機能を有効にします。",
     "config.enableArrowActions.description": "矢印の反転クイックフィックスを有効にします。",
+    "config.enableArrowCompletion.description": "Mermaid矢印のインテリセンス候補を有効にします。",
     "config.enableArrowHover.description": "矢印にマウスオーバーした際の役割説明ホバーを有効にします。"
 }
