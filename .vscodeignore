@@ -2,6 +2,7 @@
 **/.gitignore
 **/.vscode/**
 **/.vscode-test/**
+*.vsix
 
 src/**
 tsconfig.json
