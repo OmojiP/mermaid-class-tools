@@ -1,13 +1,12 @@
 # Mermaid Class Tools
 
-Created with ChatGPT.
 A VS Code extension that helps you write Mermaid syntax in Markdown.
 
-> Japanese README: [README.md](./README.md)
+> Japanese README: [README.md](https://github.com/OmojiP/mermaid-class-tools/blob/main/README.md)
 
-> Contributor Guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
+> Contributor Guide: [CONTRIBUTING.md](https://github.com/OmojiP/mermaid-class-tools/blob/main/CONTRIBUTING.md)
 
-> Changelog: [CHANGELOG.md](./CHANGELOG.md)
+> Changelog: [CHANGELOG.md](https://github.com/OmojiP/mermaid-class-tools/blob/main/CHANGELOG.md)
 
 ![](https://raw.githubusercontent.com/OmojiP/mermaid-class-tools/main/img/use.gif)
 
@@ -75,7 +74,7 @@ Mermaid has many arrow styles, and this feature helps you discover and input ava
 
 ### 5. Mermaid Code Block Diagnostics
 
-![](https://raw.githubusercontent.com/OmojiP/mermaid-class-tools/main/img/error.gif)
+![](https://raw.githubusercontent.com/OmojiP/mermaid-class-tools/main/img/error.png)
 
 - Detects Mermaid arrow syntax errors inside Mermaid code blocks and underlines error locations.
 - Hover over an error line to see details.

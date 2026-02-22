@@ -2,12 +2,16 @@
     "name": "mermaid-class-tools",
     "displayName": "%displayName%",
     "description": "%description%",
-    "version": "0.1.0",
+    "version": "0.2.1",
     "engines": {
         "vscode": "^1.70.0"
     },
     "icon": "img/icon.png",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/OmojiP/mermaid-class-tools.git"
+    },
     "publisher": "OmojiP",
     "scripts": {
         "compile": "tsc -p ./",
