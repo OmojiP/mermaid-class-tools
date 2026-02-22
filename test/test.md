@@ -32,7 +32,7 @@ classDiagram
 ```mermaid
 sequenceDiagram
     Alice->>Bob: Hello Bob
-    Bob-->>Alice: Hi Alice
+    Bob -->> Alice: Hi Alice
 ```
 
 ```mermaid

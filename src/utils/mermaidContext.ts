@@ -48,6 +48,7 @@ export function getDiagramTypeAtPosition(
     return undefined;
 }
 
+
 function normalizeDiagramType(code: string): MermaidDiagramType | undefined {
     const lines = code
         .split(/\r?\n/)
@@ -72,11 +73,11 @@ function normalizeDiagramType(code: string): MermaidDiagramType | undefined {
     }
 
     if (firstLine.startsWith('flowchart')) {
-        return 'stateDiagram';
+        return 'stateDiagram'; // フローチャートも矢印の種類はstateDiagramと同じため、ここではstateDiagramとして扱う
     }
 
     if (firstLine.startsWith('graph')) {
-        return 'stateDiagram';
+        return 'stateDiagram'; // graphも矢印の種類はstateDiagramと同じため、ここではstateDiagramとして扱う
     }
 
     if (firstLine.startsWith('erdiagram')) {
