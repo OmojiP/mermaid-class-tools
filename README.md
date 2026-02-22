@@ -1,13 +1,12 @@
 # Mermaid Class Tools
 
-chatGPTに作ってもらった
 Markdown内のMermaid記述を支援するVS Code拡張機能です。
 
-> English README: [README.en.md](./README.en.md)
+> English README: [README.en.md](https://github.com/OmojiP/mermaid-class-tools/blob/main/README.en.md)
 
-> Contributor Guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
+> Contributor Guide: [CONTRIBUTING.md](https://github.com/OmojiP/mermaid-class-tools/blob/main/CONTRIBUTING.md)
 
-> Changelog: [CHANGELOG.md](./CHANGELOG.md)
+> Changelog: [CHANGELOG.md](https://github.com/OmojiP/mermaid-class-tools/blob/main/CHANGELOG.md)
 
 ![](https://raw.githubusercontent.com/OmojiP/mermaid-class-tools/main/img/use.gif)
 
@@ -76,7 +75,7 @@ mermaidを使用していると矢印の種類が多く、特に初心者はど�
 
 ### 5.Mermaidコードブロックの診断
 
-![](https://raw.githubusercontent.com/OmojiP/mermaid-class-tools/main/img/error.gif)
+![](https://raw.githubusercontent.com/OmojiP/mermaid-class-tools/main/img/error.png)
 
 - Mermaidコードブロック内の矢印の記法エラーを検出し、エラー箇所に波線を表示します
 - エラーのある行にカーソルを合わせると、エラー内容が表示されます
