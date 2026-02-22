@@ -8,6 +8,10 @@
     },
     "icon": "img/icon.png",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/OmojiP/mermaid-class-tools.git"
+    },
     "publisher": "OmojiP",
     "scripts": {
         "compile": "tsc -p ./",

@@ -1,0 +1,1034 @@
+[
+  {
+    "name": "@acemir/cssom",
+    "version": "0.9.31",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@acemir/cssom/-/cssom-0.9.31.tgz"
+  },
+  {
+    "name": "@antfu/install-pkg",
+    "version": "1.1.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@antfu/install-pkg/-/install-pkg-1.1.0.tgz"
+  },
+  {
+    "name": "@asamuzakjp/css-color",
+    "version": "4.1.2",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@asamuzakjp/css-color/-/css-color-4.1.2.tgz"
+  },
+  {
+    "name": "@asamuzakjp/dom-selector",
+    "version": "6.8.1",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@asamuzakjp/dom-selector/-/dom-selector-6.8.1.tgz"
+  },
+  {
+    "name": "@asamuzakjp/nwsapi",
+    "version": "2.3.9",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@asamuzakjp/nwsapi/-/nwsapi-2.3.9.tgz"
+  },
+  {
+    "name": "@braintree/sanitize-url",
+    "version": "7.1.2",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@braintree/sanitize-url/-/sanitize-url-7.1.2.tgz"
+  },
+  {
+    "name": "@bramus/specificity",
+    "version": "2.4.2",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@bramus/specificity/-/specificity-2.4.2.tgz"
+  },
+  {
+    "name": "@chevrotain/cst-dts-gen",
+    "version": "11.1.1",
+    "license": "Apache-2.0",
+    "resolved": "https://registry.npmjs.org/@chevrotain/cst-dts-gen/-/cst-dts-gen-11.1.1.tgz"
+  },
+  {
+    "name": "@chevrotain/gast",
+    "version": "11.1.1",
+    "license": "Apache-2.0",
+    "resolved": "https://registry.npmjs.org/@chevrotain/gast/-/gast-11.1.1.tgz"
+  },
+  {
+    "name": "@chevrotain/regexp-to-ast",
+    "version": "11.1.1",
+    "license": "Apache-2.0",
+    "resolved": "https://registry.npmjs.org/@chevrotain/regexp-to-ast/-/regexp-to-ast-11.1.1.tgz"
+  },
+  {
+    "name": "@chevrotain/types",
+    "version": "11.1.1",
+    "license": "Apache-2.0",
+    "resolved": "https://registry.npmjs.org/@chevrotain/types/-/types-11.1.1.tgz"
+  },
+  {
+    "name": "@chevrotain/utils",
+    "version": "11.1.1",
+    "license": "Apache-2.0",
+    "resolved": "https://registry.npmjs.org/@chevrotain/utils/-/utils-11.1.1.tgz"
+  },
+  {
+    "name": "@csstools/color-helpers",
+    "version": "6.0.2",
+    "license": "MIT-0",
+    "resolved": "https://registry.npmjs.org/@csstools/color-helpers/-/color-helpers-6.0.2.tgz"
+  },
+  {
+    "name": "@csstools/css-calc",
+    "version": "3.1.1",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@csstools/css-calc/-/css-calc-3.1.1.tgz"
+  },
+  {
+    "name": "@csstools/css-color-parser",
+    "version": "4.0.2",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@csstools/css-color-parser/-/css-color-parser-4.0.2.tgz"
+  },
+  {
+    "name": "@csstools/css-parser-algorithms",
+    "version": "4.0.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@csstools/css-parser-algorithms/-/css-parser-algorithms-4.0.0.tgz"
+  },
+  {
+    "name": "@csstools/css-syntax-patches-for-csstree",
+    "version": "1.0.28",
+    "license": "MIT-0",
+    "resolved": "https://registry.npmjs.org/@csstools/css-syntax-patches-for-csstree/-/css-syntax-patches-for-csstree-1.0.28.tgz"
+  },
+  {
+    "name": "@csstools/css-tokenizer",
+    "version": "4.0.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@csstools/css-tokenizer/-/css-tokenizer-4.0.0.tgz"
+  },
+  {
+    "name": "@exodus/bytes",
+    "version": "1.14.1",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@exodus/bytes/-/bytes-1.14.1.tgz"
+  },
+  {
+    "name": "@iconify/types",
+    "version": "2.0.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@iconify/types/-/types-2.0.0.tgz"
+  },
+  {
+    "name": "@iconify/utils",
+    "version": "3.1.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@iconify/utils/-/utils-3.1.0.tgz"
+  },
+  {
+    "name": "@mermaid-js/parser",
+    "version": "1.0.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@mermaid-js/parser/-/parser-1.0.0.tgz"
+  },
+  {
+    "name": "@types/d3",
+    "version": "7.4.3",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3/-/d3-7.4.3.tgz"
+  },
+  {
+    "name": "@types/d3-array",
+    "version": "3.2.2",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-array/-/d3-array-3.2.2.tgz"
+  },
+  {
+    "name": "@types/d3-axis",
+    "version": "3.0.6",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-axis/-/d3-axis-3.0.6.tgz"
+  },
+  {
+    "name": "@types/d3-brush",
+    "version": "3.0.6",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-brush/-/d3-brush-3.0.6.tgz"
+  },
+  {
+    "name": "@types/d3-chord",
+    "version": "3.0.6",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-chord/-/d3-chord-3.0.6.tgz"
+  },
+  {
+    "name": "@types/d3-color",
+    "version": "3.1.3",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-color/-/d3-color-3.1.3.tgz"
+  },
+  {
+    "name": "@types/d3-contour",
+    "version": "3.0.6",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-contour/-/d3-contour-3.0.6.tgz"
+  },
+  {
+    "name": "@types/d3-delaunay",
+    "version": "6.0.4",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-delaunay/-/d3-delaunay-6.0.4.tgz"
+  },
+  {
+    "name": "@types/d3-dispatch",
+    "version": "3.0.7",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-dispatch/-/d3-dispatch-3.0.7.tgz"
+  },
+  {
+    "name": "@types/d3-drag",
+    "version": "3.0.7",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-drag/-/d3-drag-3.0.7.tgz"
+  },
+  {
+    "name": "@types/d3-dsv",
+    "version": "3.0.7",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-dsv/-/d3-dsv-3.0.7.tgz"
+  },
+  {
+    "name": "@types/d3-ease",
+    "version": "3.0.2",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-ease/-/d3-ease-3.0.2.tgz"
+  },
+  {
+    "name": "@types/d3-fetch",
+    "version": "3.0.7",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-fetch/-/d3-fetch-3.0.7.tgz"
+  },
+  {
+    "name": "@types/d3-force",
+    "version": "3.0.10",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-force/-/d3-force-3.0.10.tgz"
+  },
+  {
+    "name": "@types/d3-format",
+    "version": "3.0.4",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-format/-/d3-format-3.0.4.tgz"
+  },
+  {
+    "name": "@types/d3-geo",
+    "version": "3.1.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-geo/-/d3-geo-3.1.0.tgz"
+  },
+  {
+    "name": "@types/d3-hierarchy",
+    "version": "3.1.7",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-hierarchy/-/d3-hierarchy-3.1.7.tgz"
+  },
+  {
+    "name": "@types/d3-interpolate",
+    "version": "3.0.4",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-interpolate/-/d3-interpolate-3.0.4.tgz"
+  },
+  {
+    "name": "@types/d3-path",
+    "version": "3.1.1",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-path/-/d3-path-3.1.1.tgz"
+  },
+  {
+    "name": "@types/d3-polygon",
+    "version": "3.0.2",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-polygon/-/d3-polygon-3.0.2.tgz"
+  },
+  {
+    "name": "@types/d3-quadtree",
+    "version": "3.0.6",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-quadtree/-/d3-quadtree-3.0.6.tgz"
+  },
+  {
+    "name": "@types/d3-random",
+    "version": "3.0.3",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-random/-/d3-random-3.0.3.tgz"
+  },
+  {
+    "name": "@types/d3-scale",
+    "version": "4.0.9",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-scale/-/d3-scale-4.0.9.tgz"
+  },
+  {
+    "name": "@types/d3-scale-chromatic",
+    "version": "3.1.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-scale-chromatic/-/d3-scale-chromatic-3.1.0.tgz"
+  },
+  {
+    "name": "@types/d3-selection",
+    "version": "3.0.11",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-selection/-/d3-selection-3.0.11.tgz"
+  },
+  {
+    "name": "@types/d3-shape",
+    "version": "3.1.8",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-shape/-/d3-shape-3.1.8.tgz"
+  },
+  {
+    "name": "@types/d3-time",
+    "version": "3.0.4",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-time/-/d3-time-3.0.4.tgz"
+  },
+  {
+    "name": "@types/d3-time-format",
+    "version": "4.0.3",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-time-format/-/d3-time-format-4.0.3.tgz"
+  },
+  {
+    "name": "@types/d3-timer",
+    "version": "3.0.2",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-timer/-/d3-timer-3.0.2.tgz"
+  },
+  {
+    "name": "@types/d3-transition",
+    "version": "3.0.9",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-transition/-/d3-transition-3.0.9.tgz"
+  },
+  {
+    "name": "@types/d3-zoom",
+    "version": "3.0.8",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/d3-zoom/-/d3-zoom-3.0.8.tgz"
+  },
+  {
+    "name": "@types/geojson",
+    "version": "7946.0.16",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/geojson/-/geojson-7946.0.16.tgz"
+  },
+  {
+    "name": "@types/trusted-types",
+    "version": "2.0.7",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/@types/trusted-types/-/trusted-types-2.0.7.tgz"
+  },
+  {
+    "name": "acorn",
+    "version": "8.16.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/acorn/-/acorn-8.16.0.tgz"
+  },
+  {
+    "name": "agent-base",
+    "version": "7.1.4",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/agent-base/-/agent-base-7.1.4.tgz"
+  },
+  {
+    "name": "bidi-js",
+    "version": "1.0.3",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/bidi-js/-/bidi-js-1.0.3.tgz"
+  },
+  {
+    "name": "chevrotain",
+    "version": "11.1.1",
+    "license": "Apache-2.0",
+    "resolved": "https://registry.npmjs.org/chevrotain/-/chevrotain-11.1.1.tgz"
+  },
+  {
+    "name": "chevrotain-allstar",
+    "version": "0.3.1",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/chevrotain-allstar/-/chevrotain-allstar-0.3.1.tgz"
+  },
+  {
+    "name": "commander",
+    "version": "7.2.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/commander/-/commander-7.2.0.tgz"
+  },
+  {
+    "name": "confbox",
+    "version": "0.1.8",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/confbox/-/confbox-0.1.8.tgz"
+  },
+  {
+    "name": "cose-base",
+    "version": "1.0.3",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/cose-base/-/cose-base-1.0.3.tgz"
+  },
+  {
+    "name": "css-tree",
+    "version": "3.1.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/css-tree/-/css-tree-3.1.0.tgz"
+  },
+  {
+    "name": "cssstyle",
+    "version": "6.0.1",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/cssstyle/-/cssstyle-6.0.1.tgz"
+  },
+  {
+    "name": "cytoscape",
+    "version": "3.33.1",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/cytoscape/-/cytoscape-3.33.1.tgz"
+  },
+  {
+    "name": "cytoscape-cose-bilkent",
+    "version": "4.1.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/cytoscape-cose-bilkent/-/cytoscape-cose-bilkent-4.1.0.tgz"
+  },
+  {
+    "name": "cytoscape-fcose",
+    "version": "2.2.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/cytoscape-fcose/-/cytoscape-fcose-2.2.0.tgz"
+  },
+  {
+    "name": "cytoscape-fcose/node_modules/cose-base",
+    "version": "2.2.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/cose-base/-/cose-base-2.2.0.tgz"
+  },
+  {
+    "name": "cytoscape-fcose/node_modules/layout-base",
+    "version": "2.0.1",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/layout-base/-/layout-base-2.0.1.tgz"
+  },
+  {
+    "name": "d3",
+    "version": "7.9.0",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3/-/d3-7.9.0.tgz"
+  },
+  {
+    "name": "d3-array",
+    "version": "3.2.4",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-array/-/d3-array-3.2.4.tgz"
+  },
+  {
+    "name": "d3-axis",
+    "version": "3.0.0",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-axis/-/d3-axis-3.0.0.tgz"
+  },
+  {
+    "name": "d3-brush",
+    "version": "3.0.0",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-brush/-/d3-brush-3.0.0.tgz"
+  },
+  {
+    "name": "d3-chord",
+    "version": "3.0.1",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-chord/-/d3-chord-3.0.1.tgz"
+  },
+  {
+    "name": "d3-color",
+    "version": "3.1.0",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-color/-/d3-color-3.1.0.tgz"
+  },
+  {
+    "name": "d3-contour",
+    "version": "4.0.2",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-contour/-/d3-contour-4.0.2.tgz"
+  },
+  {
+    "name": "d3-delaunay",
+    "version": "6.0.4",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-delaunay/-/d3-delaunay-6.0.4.tgz"
+  },
+  {
+    "name": "d3-dispatch",
+    "version": "3.0.1",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-3.0.1.tgz"
+  },
+  {
+    "name": "d3-drag",
+    "version": "3.0.0",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-drag/-/d3-drag-3.0.0.tgz"
+  },
+  {
+    "name": "d3-dsv",
+    "version": "3.0.1",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-3.0.1.tgz"
+  },
+  {
+    "name": "d3-ease",
+    "version": "3.0.1",
+    "license": "BSD-3-Clause",
+    "resolved": "https://registry.npmjs.org/d3-ease/-/d3-ease-3.0.1.tgz"
+  },
+  {
+    "name": "d3-fetch",
+    "version": "3.0.1",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-fetch/-/d3-fetch-3.0.1.tgz"
+  },
+  {
+    "name": "d3-force",
+    "version": "3.0.0",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-force/-/d3-force-3.0.0.tgz"
+  },
+  {
+    "name": "d3-format",
+    "version": "3.1.2",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-format/-/d3-format-3.1.2.tgz"
+  },
+  {
+    "name": "d3-geo",
+    "version": "3.1.1",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-geo/-/d3-geo-3.1.1.tgz"
+  },
+  {
+    "name": "d3-hierarchy",
+    "version": "3.1.2",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-hierarchy/-/d3-hierarchy-3.1.2.tgz"
+  },
+  {
+    "name": "d3-interpolate",
+    "version": "3.0.1",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-interpolate/-/d3-interpolate-3.0.1.tgz"
+  },
+  {
+    "name": "d3-path",
+    "version": "3.1.0",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-path/-/d3-path-3.1.0.tgz"
+  },
+  {
+    "name": "d3-polygon",
+    "version": "3.0.1",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-polygon/-/d3-polygon-3.0.1.tgz"
+  },
+  {
+    "name": "d3-quadtree",
+    "version": "3.0.1",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-quadtree/-/d3-quadtree-3.0.1.tgz"
+  },
+  {
+    "name": "d3-random",
+    "version": "3.0.1",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-random/-/d3-random-3.0.1.tgz"
+  },
+  {
+    "name": "d3-sankey",
+    "version": "0.12.3",
+    "license": "BSD-3-Clause",
+    "resolved": "https://registry.npmjs.org/d3-sankey/-/d3-sankey-0.12.3.tgz"
+  },
+  {
+    "name": "d3-sankey/node_modules/d3-array",
+    "version": "2.12.1",
+    "license": "BSD-3-Clause",
+    "resolved": "https://registry.npmjs.org/d3-array/-/d3-array-2.12.1.tgz"
+  },
+  {
+    "name": "d3-sankey/node_modules/d3-path",
+    "version": "1.0.9",
+    "license": "BSD-3-Clause",
+    "resolved": "https://registry.npmjs.org/d3-path/-/d3-path-1.0.9.tgz"
+  },
+  {
+    "name": "d3-sankey/node_modules/d3-shape",
+    "version": "1.3.7",
+    "license": "BSD-3-Clause",
+    "resolved": "https://registry.npmjs.org/d3-shape/-/d3-shape-1.3.7.tgz"
+  },
+  {
+    "name": "d3-sankey/node_modules/internmap",
+    "version": "1.0.1",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/internmap/-/internmap-1.0.1.tgz"
+  },
+  {
+    "name": "d3-scale",
+    "version": "4.0.2",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-scale/-/d3-scale-4.0.2.tgz"
+  },
+  {
+    "name": "d3-scale-chromatic",
+    "version": "3.1.0",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-scale-chromatic/-/d3-scale-chromatic-3.1.0.tgz"
+  },
+  {
+    "name": "d3-selection",
+    "version": "3.0.0",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-selection/-/d3-selection-3.0.0.tgz"
+  },
+  {
+    "name": "d3-shape",
+    "version": "3.2.0",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-shape/-/d3-shape-3.2.0.tgz"
+  },
+  {
+    "name": "d3-time",
+    "version": "3.1.0",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-time/-/d3-time-3.1.0.tgz"
+  },
+  {
+    "name": "d3-time-format",
+    "version": "4.1.0",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-time-format/-/d3-time-format-4.1.0.tgz"
+  },
+  {
+    "name": "d3-timer",
+    "version": "3.0.1",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-timer/-/d3-timer-3.0.1.tgz"
+  },
+  {
+    "name": "d3-transition",
+    "version": "3.0.1",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-transition/-/d3-transition-3.0.1.tgz"
+  },
+  {
+    "name": "d3-zoom",
+    "version": "3.0.0",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/d3-zoom/-/d3-zoom-3.0.0.tgz"
+  },
+  {
+    "name": "dagre-d3-es",
+    "version": "7.0.13",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/dagre-d3-es/-/dagre-d3-es-7.0.13.tgz"
+  },
+  {
+    "name": "data-urls",
+    "version": "7.0.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/data-urls/-/data-urls-7.0.0.tgz"
+  },
+  {
+    "name": "dayjs",
+    "version": "1.11.19",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/dayjs/-/dayjs-1.11.19.tgz"
+  },
+  {
+    "name": "debug",
+    "version": "4.4.3",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz"
+  },
+  {
+    "name": "decimal.js",
+    "version": "10.6.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/decimal.js/-/decimal.js-10.6.0.tgz"
+  },
+  {
+    "name": "delaunator",
+    "version": "5.0.1",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/delaunator/-/delaunator-5.0.1.tgz"
+  },
+  {
+    "name": "dompurify",
+    "version": "3.3.1",
+    "license": "(MPL-2.0 OR Apache-2.0)",
+    "resolved": "https://registry.npmjs.org/dompurify/-/dompurify-3.3.1.tgz"
+  },
+  {
+    "name": "entities",
+    "version": "6.0.1",
+    "license": "BSD-2-Clause",
+    "resolved": "https://registry.npmjs.org/entities/-/entities-6.0.1.tgz"
+  },
+  {
+    "name": "hachure-fill",
+    "version": "0.5.2",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/hachure-fill/-/hachure-fill-0.5.2.tgz"
+  },
+  {
+    "name": "html-encoding-sniffer",
+    "version": "6.0.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/html-encoding-sniffer/-/html-encoding-sniffer-6.0.0.tgz"
+  },
+  {
+    "name": "http-proxy-agent",
+    "version": "7.0.2",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/http-proxy-agent/-/http-proxy-agent-7.0.2.tgz"
+  },
+  {
+    "name": "https-proxy-agent",
+    "version": "7.0.6",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-7.0.6.tgz"
+  },
+  {
+    "name": "iconv-lite",
+    "version": "0.6.3",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.6.3.tgz"
+  },
+  {
+    "name": "internmap",
+    "version": "2.0.3",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/internmap/-/internmap-2.0.3.tgz"
+  },
+  {
+    "name": "is-potential-custom-element-name",
+    "version": "1.0.1",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/is-potential-custom-element-name/-/is-potential-custom-element-name-1.0.1.tgz"
+  },
+  {
+    "name": "jsdom",
+    "version": "28.1.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/jsdom/-/jsdom-28.1.0.tgz"
+  },
+  {
+    "name": "katex",
+    "version": "0.16.28",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/katex/-/katex-0.16.28.tgz"
+  },
+  {
+    "name": "katex/node_modules/commander",
+    "version": "8.3.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/commander/-/commander-8.3.0.tgz"
+  },
+  {
+    "name": "khroma",
+    "version": "2.1.0",
+    "license": "UNKNOWN",
+    "resolved": "https://registry.npmjs.org/khroma/-/khroma-2.1.0.tgz"
+  },
+  {
+    "name": "langium",
+    "version": "4.2.1",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/langium/-/langium-4.2.1.tgz"
+  },
+  {
+    "name": "layout-base",
+    "version": "1.0.2",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/layout-base/-/layout-base-1.0.2.tgz"
+  },
+  {
+    "name": "lodash-es",
+    "version": "4.17.23",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.23.tgz"
+  },
+  {
+    "name": "lru-cache",
+    "version": "11.2.6",
+    "license": "BlueOak-1.0.0",
+    "resolved": "https://registry.npmjs.org/lru-cache/-/lru-cache-11.2.6.tgz"
+  },
+  {
+    "name": "marked",
+    "version": "16.4.2",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/marked/-/marked-16.4.2.tgz"
+  },
+  {
+    "name": "mdn-data",
+    "version": "2.12.2",
+    "license": "CC0-1.0",
+    "resolved": "https://registry.npmjs.org/mdn-data/-/mdn-data-2.12.2.tgz"
+  },
+  {
+    "name": "mermaid",
+    "version": "11.12.3",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/mermaid/-/mermaid-11.12.3.tgz"
+  },
+  {
+    "name": "mlly",
+    "version": "1.8.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/mlly/-/mlly-1.8.0.tgz"
+  },
+  {
+    "name": "ms",
+    "version": "2.1.3",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz"
+  },
+  {
+    "name": "package-manager-detector",
+    "version": "1.6.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/package-manager-detector/-/package-manager-detector-1.6.0.tgz"
+  },
+  {
+    "name": "parse5",
+    "version": "8.0.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/parse5/-/parse5-8.0.0.tgz"
+  },
+  {
+    "name": "path-data-parser",
+    "version": "0.1.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/path-data-parser/-/path-data-parser-0.1.0.tgz"
+  },
+  {
+    "name": "pathe",
+    "version": "2.0.3",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/pathe/-/pathe-2.0.3.tgz"
+  },
+  {
+    "name": "pkg-types",
+    "version": "1.3.1",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/pkg-types/-/pkg-types-1.3.1.tgz"
+  },
+  {
+    "name": "points-on-curve",
+    "version": "0.2.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/points-on-curve/-/points-on-curve-0.2.0.tgz"
+  },
+  {
+    "name": "points-on-path",
+    "version": "0.2.1",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/points-on-path/-/points-on-path-0.2.1.tgz"
+  },
+  {
+    "name": "punycode",
+    "version": "2.3.1",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/punycode/-/punycode-2.3.1.tgz"
+  },
+  {
+    "name": "require-from-string",
+    "version": "2.0.2",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz"
+  },
+  {
+    "name": "robust-predicates",
+    "version": "3.0.2",
+    "license": "Unlicense",
+    "resolved": "https://registry.npmjs.org/robust-predicates/-/robust-predicates-3.0.2.tgz"
+  },
+  {
+    "name": "roughjs",
+    "version": "4.6.6",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/roughjs/-/roughjs-4.6.6.tgz"
+  },
+  {
+    "name": "rw",
+    "version": "1.3.3",
+    "license": "BSD-3-Clause",
+    "resolved": "https://registry.npmjs.org/rw/-/rw-1.3.3.tgz"
+  },
+  {
+    "name": "safer-buffer",
+    "version": "2.1.2",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz"
+  },
+  {
+    "name": "saxes",
+    "version": "6.0.0",
+    "license": "ISC",
+    "resolved": "https://registry.npmjs.org/saxes/-/saxes-6.0.0.tgz"
+  },
+  {
+    "name": "source-map-js",
+    "version": "1.2.1",
+    "license": "BSD-3-Clause",
+    "resolved": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz"
+  },
+  {
+    "name": "stylis",
+    "version": "4.3.6",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/stylis/-/stylis-4.3.6.tgz"
+  },
+  {
+    "name": "symbol-tree",
+    "version": "3.2.4",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/symbol-tree/-/symbol-tree-3.2.4.tgz"
+  },
+  {
+    "name": "tinyexec",
+    "version": "1.0.2",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/tinyexec/-/tinyexec-1.0.2.tgz"
+  },
+  {
+    "name": "tldts",
+    "version": "7.0.23",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/tldts/-/tldts-7.0.23.tgz"
+  },
+  {
+    "name": "tldts-core",
+    "version": "7.0.23",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/tldts-core/-/tldts-core-7.0.23.tgz"
+  },
+  {
+    "name": "tough-cookie",
+    "version": "6.0.0",
+    "license": "BSD-3-Clause",
+    "resolved": "https://registry.npmjs.org/tough-cookie/-/tough-cookie-6.0.0.tgz"
+  },
+  {
+    "name": "tr46",
+    "version": "6.0.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/tr46/-/tr46-6.0.0.tgz"
+  },
+  {
+    "name": "ts-dedent",
+    "version": "2.2.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/ts-dedent/-/ts-dedent-2.2.0.tgz"
+  },
+  {
+    "name": "ufo",
+    "version": "1.6.3",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/ufo/-/ufo-1.6.3.tgz"
+  },
+  {
+    "name": "undici",
+    "version": "7.22.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/undici/-/undici-7.22.0.tgz"
+  },
+  {
+    "name": "uuid",
+    "version": "11.1.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/uuid/-/uuid-11.1.0.tgz"
+  },
+  {
+    "name": "vscode-jsonrpc",
+    "version": "8.2.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/vscode-jsonrpc/-/vscode-jsonrpc-8.2.0.tgz"
+  },
+  {
+    "name": "vscode-languageserver",
+    "version": "9.0.1",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/vscode-languageserver/-/vscode-languageserver-9.0.1.tgz"
+  },
+  {
+    "name": "vscode-languageserver-protocol",
+    "version": "3.17.5",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/vscode-languageserver-protocol/-/vscode-languageserver-protocol-3.17.5.tgz"
+  },
+  {
+    "name": "vscode-languageserver-textdocument",
+    "version": "1.0.12",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/vscode-languageserver-textdocument/-/vscode-languageserver-textdocument-1.0.12.tgz"
+  },
+  {
+    "name": "vscode-languageserver-types",
+    "version": "3.17.5",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/vscode-languageserver-types/-/vscode-languageserver-types-3.17.5.tgz"
+  },
+  {
+    "name": "vscode-uri",
+    "version": "3.1.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/vscode-uri/-/vscode-uri-3.1.0.tgz"
+  },
+  {
+    "name": "w3c-xmlserializer",
+    "version": "5.0.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/w3c-xmlserializer/-/w3c-xmlserializer-5.0.0.tgz"
+  },
+  {
+    "name": "webidl-conversions",
+    "version": "8.0.1",
+    "license": "BSD-2-Clause",
+    "resolved": "https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-8.0.1.tgz"
+  },
+  {
+    "name": "whatwg-mimetype",
+    "version": "5.0.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/whatwg-mimetype/-/whatwg-mimetype-5.0.0.tgz"
+  },
+  {
+    "name": "whatwg-url",
+    "version": "16.0.1",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/whatwg-url/-/whatwg-url-16.0.1.tgz"
+  },
+  {
+    "name": "xml-name-validator",
+    "version": "5.0.0",
+    "license": "Apache-2.0",
+    "resolved": "https://registry.npmjs.org/xml-name-validator/-/xml-name-validator-5.0.0.tgz"
+  },
+  {
+    "name": "xmlchars",
+    "version": "2.2.0",
+    "license": "MIT",
+    "resolved": "https://registry.npmjs.org/xmlchars/-/xmlchars-2.2.0.tgz"
+  }
+]
