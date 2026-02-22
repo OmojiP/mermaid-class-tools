@@ -13,4 +13,7 @@ node_modules/**
 **/*.ts
 
 test.md
+test/**
+CONTRIBUTING.md
+README.en.md
 img/use.gif
