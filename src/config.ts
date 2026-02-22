@@ -7,6 +7,7 @@ export type FeatureFlags = {
     enableArrowActions: boolean;
     enableArrowCompletion: boolean;
     enableArrowHover: boolean;
+    enableDiagnostics: boolean;
 };
 
 export function getFeatureFlags(): FeatureFlags {
@@ -17,5 +18,6 @@ export function getFeatureFlags(): FeatureFlags {
         enableArrowActions: config.get<boolean>('enableArrowActions', true),
         enableArrowCompletion: config.get<boolean>('enableArrowCompletion', true),
         enableArrowHover: config.get<boolean>('enableArrowHover', true),
+        enableDiagnostics: config.get<boolean>('enableDiagnostics', true),
     };
 }

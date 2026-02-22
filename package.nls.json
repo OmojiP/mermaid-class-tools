@@ -6,5 +6,6 @@
     "config.enableRename.description": "Enable F2 rename inside mermaid code blocks.",
     "config.enableArrowActions.description": "Enable quick fixes to reverse Mermaid arrows.",
     "config.enableArrowCompletion.description": "Enable IntelliSense suggestions for Mermaid arrows.",
-    "config.enableArrowHover.description": "Enable hover descriptions for Mermaid arrows."
+    "config.enableArrowHover.description": "Enable hover descriptions for Mermaid arrows.",
+    "config.enableDiagnostics.description": "Enable Mermaid parser/render-based diagnostics for code blocks."
 }

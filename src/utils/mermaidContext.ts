@@ -1,18 +1,43 @@
 import * as vscode from 'vscode';
 import { MermaidDiagramType } from '../i18n/messages';
 
-export function getDiagramTypeAtPosition(
-    document: vscode.TextDocument,
-    position: vscode.Position
-): MermaidDiagramType | undefined {
+export type MermaidCodeBlock = {
+    code: string;
+    codeOffset: number;
+    range: vscode.Range;
+};
+
+export function getMermaidCodeBlocks(document: vscode.TextDocument): MermaidCodeBlock[] {
     const fullText = document.getText();
-    const offset = document.offsetAt(position);
     const regex = /```mermaid\s*([\s\S]*?)```/g;
+    const blocks: MermaidCodeBlock[] = [];
     let match: RegExpExecArray | null;
 
     while ((match = regex.exec(fullText)) !== null) {
         const code = match[1];
         const codeOffset = match.index + match[0].indexOf(code);
+        const start = document.positionAt(codeOffset);
+        const end = document.positionAt(codeOffset + code.length);
+        blocks.push({
+            code,
+            codeOffset,
+            range: new vscode.Range(start, end),
+        });
+    }
+
+    return blocks;
+}
+
+export function getDiagramTypeAtPosition(
+    document: vscode.TextDocument,
+    position: vscode.Position
+): MermaidDiagramType | undefined {
+    const offset = document.offsetAt(position);
+    const blocks = getMermaidCodeBlocks(document);
+
+    for (const block of blocks) {
+        const codeOffset = block.codeOffset;
+        const code = block.code;
         if (offset < codeOffset || offset >= codeOffset + code.length) {
             continue;
         }

@@ -4,6 +4,7 @@ import { getLocaleMessages } from './i18n/messages';
 import { createArrowCodeActionProvider } from './providers/arrowCodeActionProvider';
 import { createArrowCompletionProvider } from './providers/arrowCompletionProvider';
 import { createArrowHoverProvider } from './providers/arrowHoverProvider';
+import { registerMermaidDiagnostics } from './providers/mermaidDiagnosticsProvider';
 import { MermaidClassRenameProvider } from './providers/renameProvider';
 
 export function activate(context: vscode.ExtensionContext): void {
@@ -49,6 +50,10 @@ export function activate(context: vscode.ExtensionContext): void {
 
         if (featureFlags.enableArrowHover) {
             featureDisposables.push(vscode.languages.registerHoverProvider('markdown', createArrowHoverProvider(messages)));
+        }
+
+        if (featureFlags.enableDiagnostics) {
+            featureDisposables.push(registerMermaidDiagnostics(context));
         }
     };
 
