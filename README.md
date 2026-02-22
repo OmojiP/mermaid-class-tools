@@ -3,6 +3,8 @@
 chatGPTに作ってもらった
 Markdown内のMermaid記述を支援するVS Code拡張機能です。
 
+English README: [README.en.md](./README.en.md)
+
 ![](https://raw.githubusercontent.com/OmojiP/mermaid-class-tools/main/img/use.gif)
 
 ## 使い方
@@ -28,7 +30,9 @@ VS Codeの設定で以下を切り替えできます。
 
 - `mermaidClassTools.enableRename` : リネーム機能
 - `mermaidClassTools.enableArrowActions` : 矢印反転のクイックフィックス
+- `mermaidClassTools.enableArrowCompletion` : 矢印入力のインテリセンス
 - `mermaidClassTools.enableArrowHover` : 矢印説明のホバー
+- `mermaidClassTools.enableDiagnostics` : Mermaidコードブロックの診断
 
 設定変更後は自動で反映されます。
 
