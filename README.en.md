@@ -3,8 +3,11 @@
 Created with ChatGPT.
 A VS Code extension that helps you write Mermaid syntax in Markdown.
 
-Japanese README: [README.md](./README.md)
-Contributor Guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
+> Japanese README: [README.md](./README.md)
+
+> Contributor Guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
+
+> Changelog: [CHANGELOG.md](./CHANGELOG.md)
 
 ![](https://raw.githubusercontent.com/OmojiP/mermaid-class-tools/main/img/use.gif)
 

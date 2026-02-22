@@ -3,8 +3,11 @@
 chatGPTに作ってもらった
 Markdown内のMermaid記述を支援するVS Code拡張機能です。
 
-English README: [README.en.md](./README.en.md)
-Contributor Guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
+> English README: [README.en.md](./README.en.md)
+
+> Contributor Guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
+
+> Changelog: [CHANGELOG.md](./CHANGELOG.md)
 
 ![](https://raw.githubusercontent.com/OmojiP/mermaid-class-tools/main/img/use.gif)
 
