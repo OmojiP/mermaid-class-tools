@@ -2,11 +2,11 @@
 
 Markdown内のMermaid記述を支援するVS Code拡張機能です。
 
-> English README: [README.en.md](./README.en.md)
+> English README: [README.en.md](https://github.com/OmojiP/mermaid-class-tools/blob/main/README.en.md)
 
-> Contributor Guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
+> Contributor Guide: [CONTRIBUTING.md](https://github.com/OmojiP/mermaid-class-tools/blob/main/CONTRIBUTING.md)
 
-> Changelog: [CHANGELOG.md](./CHANGELOG.md)
+> Changelog: [CHANGELOG.md](https://github.com/OmojiP/mermaid-class-tools/blob/main/CHANGELOG.md)
 
 ![](https://raw.githubusercontent.com/OmojiP/mermaid-class-tools/main/img/use.gif)
 

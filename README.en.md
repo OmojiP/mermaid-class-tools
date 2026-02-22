@@ -2,11 +2,11 @@
 
 A VS Code extension that helps you write Mermaid syntax in Markdown.
 
-> Japanese README: [README.md](./README.md)
+> Japanese README: [README.md](https://github.com/OmojiP/mermaid-class-tools/blob/main/README.md)
 
-> Contributor Guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
+> Contributor Guide: [CONTRIBUTING.md](https://github.com/OmojiP/mermaid-class-tools/blob/main/CONTRIBUTING.md)
 
-> Changelog: [CHANGELOG.md](./CHANGELOG.md)
+> Changelog: [CHANGELOG.md](https://github.com/OmojiP/mermaid-class-tools/blob/main/CHANGELOG.md)
 
 ![](https://raw.githubusercontent.com/OmojiP/mermaid-class-tools/main/img/use.gif)
 
