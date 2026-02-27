@@ -1,5 +1,6 @@
 import * as vscode from 'vscode';
 import { JSDOM } from 'jsdom';
+import { getDiagnosticsTriggerMode, getDiagnosticsValidationMode } from '../config';
 import { getMermaidCodeBlocks, MermaidCodeBlock } from '../utils/mermaidContext';
 
 type MermaidModule = {
@@ -50,12 +51,19 @@ const validationResultCache = new Map<string, MermaidParseError | null>();
 export function registerMermaidDiagnostics(context: vscode.ExtensionContext): vscode.Disposable {
     const collection = vscode.languages.createDiagnosticCollection('mermaid');
     const validator = new MermaidDiagnosticsValidator(collection);
+    const triggerMode = getDiagnosticsTriggerMode();
 
     const openDisposable = vscode.workspace.onDidOpenTextDocument((document) => {
-        validator.scheduleRefresh(document, { delayMs: 0, mode: 'full' });
+        if (triggerMode === 'onChange') {
+            validator.scheduleRefresh(document, { delayMs: 0, mode: 'full' });
+        }
     });
     const changeDisposable = vscode.workspace.onDidChangeTextDocument((event) => {
-        validator.scheduleRefresh(event.document, { mode: 'light' });
+        if (triggerMode !== 'onChange') {
+            return;
+        }
+        const mode = getDiagnosticsValidationMode();
+        validator.scheduleRefresh(event.document, { mode });
     });
     const saveDisposable = vscode.workspace.onDidSaveTextDocument((document) => {
         validator.scheduleRefresh(document, { delayMs: 0, mode: 'full' });
@@ -66,7 +74,9 @@ export function registerMermaidDiagnostics(context: vscode.ExtensionContext): vs
     });
 
     for (const document of vscode.workspace.textDocuments) {
-        validator.scheduleRefresh(document, { delayMs: 0, mode: 'full' });
+        if (triggerMode === 'onChange') {
+            validator.scheduleRefresh(document, { delayMs: 0, mode: 'full' });
+        }
     }
 
     return {

@@ -10,6 +10,9 @@ export type FeatureFlags = {
     enableDiagnostics: boolean;
 };
 
+export type DiagnosticsValidationMode = 'full' | 'light';
+export type DiagnosticsTriggerMode = 'onChange' | 'onSave';
+
 export function getFeatureFlags(): FeatureFlags {
     const config = vscode.workspace.getConfiguration(CONFIG_SECTION);
 
@@ -20,4 +23,14 @@ export function getFeatureFlags(): FeatureFlags {
         enableArrowHover: config.get<boolean>('enableArrowHover', true),
         enableDiagnostics: config.get<boolean>('enableDiagnostics', true),
     };
+}
+
+export function getDiagnosticsValidationMode(): DiagnosticsValidationMode {
+    const config = vscode.workspace.getConfiguration(CONFIG_SECTION);
+    return config.get<DiagnosticsValidationMode>('diagnosticsValidationMode', 'full');
+}
+
+export function getDiagnosticsTriggerMode(): DiagnosticsTriggerMode {
+    const config = vscode.workspace.getConfiguration(CONFIG_SECTION);
+    return config.get<DiagnosticsTriggerMode>('diagnosticsTriggerMode', 'onChange');
 }
