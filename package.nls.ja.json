@@ -7,5 +7,11 @@
     "config.enableArrowActions.description": "矢印の反転クイックフィックスを有効にします。",
     "config.enableArrowCompletion.description": "Mermaid矢印のインテリセンス候補を有効にします。",
     "config.enableArrowHover.description": "矢印にマウスオーバーした際の役割説明ホバーを有効にします。",
-    "config.enableDiagnostics.description": "Mermaidコードブロックのパーサー/レンダラー診断を有効にします。"
+    "config.enableDiagnostics.description": "Mermaidコードブロックのパーサー/レンダラー診断を有効にします。",
+    "config.diagnosticsValidationMode.description": "Markdown編集中の診断モードを選択します。",
+    "config.diagnosticsValidationMode.full": "完全検証（parse + render）。精度は高いですが重くなります。",
+    "config.diagnosticsValidationMode.light": "軽量検証（parseのみ）。編集中の動作が軽くなります。",
+    "config.diagnosticsTriggerMode.description": "診断を実行するタイミングを選択します。",
+    "config.diagnosticsTriggerMode.onChange": "変更時（および保存時）に実行します。",
+    "config.diagnosticsTriggerMode.onSave": "保存時のみ実行します。編集時の重さを軽減します。"
 }

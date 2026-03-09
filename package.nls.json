@@ -7,5 +7,11 @@
     "config.enableArrowActions.description": "Enable quick fixes to reverse Mermaid arrows.",
     "config.enableArrowCompletion.description": "Enable IntelliSense suggestions for Mermaid arrows.",
     "config.enableArrowHover.description": "Enable hover descriptions for Mermaid arrows.",
-    "config.enableDiagnostics.description": "Enable Mermaid parser/render-based diagnostics for code blocks."
+    "config.enableDiagnostics.description": "Enable Mermaid parser/render-based diagnostics for code blocks.",
+    "config.diagnosticsValidationMode.description": "Select diagnostics validation mode while editing Markdown.",
+    "config.diagnosticsValidationMode.full": "Full validation (parse + render). Most accurate but heavier.",
+    "config.diagnosticsValidationMode.light": "Light validation (parse only). Faster while editing.",
+    "config.diagnosticsTriggerMode.description": "Select when diagnostics should run.",
+    "config.diagnosticsTriggerMode.onChange": "On change (and save). Runs while editing.",
+    "config.diagnosticsTriggerMode.onSave": "On save only. Reduces editor lag."
 }

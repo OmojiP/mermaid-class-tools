@@ -1,5 +1,6 @@
 import * as vscode from 'vscode';
 import { JSDOM } from 'jsdom';
+import { getDiagnosticsTriggerMode, getDiagnosticsValidationMode } from '../config';
 import { getMermaidCodeBlocks, MermaidCodeBlock } from '../utils/mermaidContext';
 
 type MermaidModule = {
@@ -40,29 +41,50 @@ const importDomPurify = new Function('specifier', 'return import(specifier);') a
 let mermaidModulePromise: Promise<MermaidModule> | undefined;
 let domPurifyPatchedPromise: Promise<void> | undefined;
 let domEnvironmentReady = false;
+const DIAGNOSTIC_DEBOUNCE_MS = 500;
+const MAX_VALIDATION_CACHE_SIZE = 500;
+
+type ValidationMode = 'light' | 'full';
+
+const validationResultCache = new Map<string, MermaidParseError | null>();
 
 export function registerMermaidDiagnostics(context: vscode.ExtensionContext): vscode.Disposable {
     const collection = vscode.languages.createDiagnosticCollection('mermaid');
     const validator = new MermaidDiagnosticsValidator(collection);
+    const triggerMode = getDiagnosticsTriggerMode();
 
     const openDisposable = vscode.workspace.onDidOpenTextDocument((document) => {
-        void validator.refresh(document);
+        if (triggerMode === 'onChange') {
+            validator.scheduleRefresh(document, { delayMs: 0, mode: 'full' });
+        }
     });
     const changeDisposable = vscode.workspace.onDidChangeTextDocument((event) => {
-        void validator.refresh(event.document);
+        if (triggerMode !== 'onChange') {
+            return;
+        }
+        const mode = getDiagnosticsValidationMode();
+        validator.scheduleRefresh(event.document, { mode });
+    });
+    const saveDisposable = vscode.workspace.onDidSaveTextDocument((document) => {
+        validator.scheduleRefresh(document, { delayMs: 0, mode: 'full' });
     });
     const closeDisposable = vscode.workspace.onDidCloseTextDocument((document) => {
+        validator.clearPending(document.uri);
         collection.delete(document.uri);
     });
 
     for (const document of vscode.workspace.textDocuments) {
-        void validator.refresh(document);
+        if (triggerMode === 'onChange') {
+            validator.scheduleRefresh(document, { delayMs: 0, mode: 'full' });
+        }
     }
 
     return {
         dispose: () => {
+            validator.dispose();
             openDisposable.dispose();
             changeDisposable.dispose();
+            saveDisposable.dispose();
             closeDisposable.dispose();
             collection.clear();
             collection.dispose();
@@ -72,12 +94,52 @@ export function registerMermaidDiagnostics(context: vscode.ExtensionContext): vs
 
 class MermaidDiagnosticsValidator {
     private readonly collection: vscode.DiagnosticCollection;
+    private readonly pendingTimers = new Map<string, NodeJS.Timeout>();
+    private readonly runTokens = new Map<string, number>();
 
     constructor(collection: vscode.DiagnosticCollection) {
         this.collection = collection;
     }
 
-    async refresh(document: vscode.TextDocument): Promise<void> {
+    scheduleRefresh(
+        document: vscode.TextDocument,
+        options: { delayMs?: number; mode?: ValidationMode } = {}
+    ): void {
+        const key = document.uri.toString();
+        this.clearPending(document.uri);
+        const delayMs = options.delayMs ?? DIAGNOSTIC_DEBOUNCE_MS;
+        const mode = options.mode ?? 'light';
+
+        const nextToken = (this.runTokens.get(key) ?? 0) + 1;
+        this.runTokens.set(key, nextToken);
+
+        const timer = setTimeout(() => {
+            this.pendingTimers.delete(key);
+            void this.refresh(document, nextToken, mode);
+        }, delayMs);
+
+        this.pendingTimers.set(key, timer);
+    }
+
+    clearPending(uri: vscode.Uri): void {
+        const key = uri.toString();
+        const timer = this.pendingTimers.get(key);
+        if (timer) {
+            clearTimeout(timer);
+            this.pendingTimers.delete(key);
+        }
+    }
+
+    dispose(): void {
+        for (const timer of this.pendingTimers.values()) {
+            clearTimeout(timer);
+        }
+        this.pendingTimers.clear();
+        this.runTokens.clear();
+    }
+
+    async refresh(document: vscode.TextDocument, token: number, mode: ValidationMode): Promise<void> {
+        const key = document.uri.toString();
         if (document.languageId !== 'markdown') {
             this.collection.delete(document.uri);
             return;
@@ -92,12 +154,18 @@ class MermaidDiagnosticsValidator {
         const diagnostics: vscode.Diagnostic[] = [];
 
         for (const block of blocks) {
-            try {
-                await parseWithMermaid(block.code);
-                await renderWithMermaid(block.code);
-            } catch (error) {
+            if (this.runTokens.get(key) !== token) {
+                return;
+            }
+
+            const error = await validateCode(block.code, mode);
+            if (error) {
                 diagnostics.push(this.toDiagnostic(document, block, error));
             }
+        }
+
+        if (this.runTokens.get(key) !== token) {
+            return;
         }
 
         this.collection.set(document.uri, diagnostics);
@@ -120,6 +188,30 @@ class MermaidDiagnosticsValidator {
         diagnostic.source = 'mermaid';
         return diagnostic;
     }
+}
+
+async function validateCode(code: string, mode: ValidationMode): Promise<MermaidParseError | null> {
+    const cacheKey = `${mode}:${code}`;
+    const cached = validationResultCache.get(cacheKey);
+    if (cached !== undefined) {
+        return cached;
+    }
+
+    let result: MermaidParseError | null = null;
+    try {
+        await parseWithMermaid(code);
+        if (mode === 'full') {
+            await renderWithMermaid(code);
+        }
+    } catch (error) {
+        result = error as MermaidParseError;
+    }
+
+    if (validationResultCache.size >= MAX_VALIDATION_CACHE_SIZE) {
+        validationResultCache.clear();
+    }
+    validationResultCache.set(cacheKey, result);
+    return result;
 }
 
 async function renderWithMermaid(code: string): Promise<void> {

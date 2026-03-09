@@ -7,7 +7,20 @@ export type MermaidCodeBlock = {
     range: vscode.Range;
 };
 
+type MermaidCodeBlockCache = {
+    version: number;
+    blocks: MermaidCodeBlock[];
+};
+
+const codeBlockCache = new Map<string, MermaidCodeBlockCache>();
+
 export function getMermaidCodeBlocks(document: vscode.TextDocument): MermaidCodeBlock[] {
+    const cacheKey = document.uri.toString();
+    const cached = codeBlockCache.get(cacheKey);
+    if (cached && cached.version === document.version) {
+        return cached.blocks;
+    }
+
     const fullText = document.getText();
     const regex = /```mermaid\s*([\s\S]*?)```/g;
     const blocks: MermaidCodeBlock[] = [];
@@ -25,27 +38,34 @@ export function getMermaidCodeBlocks(document: vscode.TextDocument): MermaidCode
         });
     }
 
+    codeBlockCache.set(cacheKey, {
+        version: document.version,
+        blocks,
+    });
+
     return blocks;
+}
+
+export function findMermaidCodeBlockAtPosition(
+    document: vscode.TextDocument,
+    position: vscode.Position
+): MermaidCodeBlock | undefined {
+    const offset = document.offsetAt(position);
+    return getMermaidCodeBlocks(document).find(
+        (block) => offset >= block.codeOffset && offset < block.codeOffset + block.code.length
+    );
 }
 
 export function getDiagramTypeAtPosition(
     document: vscode.TextDocument,
     position: vscode.Position
 ): MermaidDiagramType | undefined {
-    const offset = document.offsetAt(position);
-    const blocks = getMermaidCodeBlocks(document);
-
-    for (const block of blocks) {
-        const codeOffset = block.codeOffset;
-        const code = block.code;
-        if (offset < codeOffset || offset >= codeOffset + code.length) {
-            continue;
-        }
-
-        return normalizeDiagramType(code);
+    const block = findMermaidCodeBlockAtPosition(document, position);
+    if (!block) {
+        return undefined;
     }
 
-    return undefined;
+    return normalizeDiagramType(block.code);
 }
 
 

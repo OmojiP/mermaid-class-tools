@@ -2,7 +2,7 @@
     "name": "mermaid-class-tools",
     "displayName": "%displayName%",
     "description": "%description%",
-    "version": "0.2.1",
+    "version": "0.2.4",
     "engines": {
         "vscode": "^1.70.0"
     },
@@ -66,6 +66,32 @@
                     "type": "boolean",
                     "default": true,
                     "description": "%config.enableDiagnostics.description%"
+                },
+                "mermaidClassTools.diagnosticsValidationMode": {
+                    "type": "string",
+                    "enum": [
+                        "full",
+                        "light"
+                    ],
+                    "default": "full",
+                    "description": "%config.diagnosticsValidationMode.description%",
+                    "enumDescriptions": [
+                        "%config.diagnosticsValidationMode.full%",
+                        "%config.diagnosticsValidationMode.light%"
+                    ]
+                },
+                "mermaidClassTools.diagnosticsTriggerMode": {
+                    "type": "string",
+                    "enum": [
+                        "onChange",
+                        "onSave"
+                    ],
+                    "default": "onSave",
+                    "description": "%config.diagnosticsTriggerMode.description%",
+                    "enumDescriptions": [
+                        "%config.diagnosticsTriggerMode.onChange%",
+                        "%config.diagnosticsTriggerMode.onSave%"
+                    ]
                 }
             }
         }
