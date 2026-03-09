@@ -1,5 +1,34 @@
 # Changelog
 
+## [0.2.4] - 2026-03-09
+
+### Changed
+
+- `mermaidClassTools.diagnosticsTriggerMode` のデフォルト値を `onSave` に変更。
+  - Changed default value of `mermaidClassTools.diagnosticsTriggerMode` to `onSave`.
+- README の設定項目に診断関連設定（`diagnosticsValidationMode` / `diagnosticsTriggerMode`）を追記。
+  - Added diagnostics-related settings (`diagnosticsValidationMode` / `diagnosticsTriggerMode`) to README.
+- README の診断機能セクションに、`full`/`light` と `onChange`/`onSave` の挙動説明を追記。
+  - Added behavior details for `full`/`light` and `onChange`/`onSave` in the diagnostics section of README.
+
+## [0.2.3] - 2026-03-09
+
+### Added
+
+- 診断設定を追加：
+  - Added diagnostics settings:
+  - `mermaidClassTools.diagnosticsValidationMode`（`full` / `light`）
+  - `mermaidClassTools.diagnosticsTriggerMode`（`onChange` / `onSave`）
+- 設定文言のローカライズを追加（日本語/英語）。
+  - Added localized setting descriptions (Japanese/English).
+
+### Changed
+
+- 診断実行タイミングを `diagnosticsTriggerMode` に従うように変更。
+  - Diagnostics execution timing now follows `diagnosticsTriggerMode`.
+- 変更時診断の検証モードを `diagnosticsValidationMode` で切り替え可能に変更。
+  - Validation mode for on-change diagnostics is now configurable via `diagnosticsValidationMode`.
+
 ## [0.2.0] - 2026-02-22
 
 ### Added
