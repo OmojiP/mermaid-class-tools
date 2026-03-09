@@ -79,6 +79,12 @@ Mermaid has many arrow styles, and this feature helps you discover and input ava
 - Detects Mermaid arrow syntax errors inside Mermaid code blocks and underlines error locations.
 - Hover over an error line to see details.
 - If a precise error location is unavailable, it shows a block-level diagnostic.
+- You can choose diagnostics validation mode with `mermaidClassTools.diagnosticsValidationMode`.
+    - `full`: validates with `parse + render`, and reports both syntax errors and render-time errors (more accurate).
+    - `light`: validates with `parse` only, mainly for fast syntax checks (lighter).
+- You can choose diagnostics timing with `mermaidClassTools.diagnosticsTriggerMode`.
+    - `onChange`: runs diagnostics while editing (on each change).
+    - `onSave`: runs diagnostics only when saving (default).
 
 ## Settings (Per-feature ON/OFF)
 
@@ -90,6 +96,8 @@ Open settings with `Ctrl + ,` (`Cmd + ,` on Mac) and search for `mermaidClassToo
 - `mermaidClassTools.enableArrowHover`: Hover descriptions for arrows
 - `mermaidClassTools.enableArrowCompletion`: IntelliSense suggestions for arrows
 - `mermaidClassTools.enableDiagnostics`: Diagnostics for Mermaid code blocks
+- `mermaidClassTools.diagnosticsValidationMode`: Diagnostics mode (`full` / `light`)
+- `mermaidClassTools.diagnosticsTriggerMode`: Diagnostics trigger timing (`onChange` / `onSave`, default: `onSave`)
 
 ## Transformation Example
 

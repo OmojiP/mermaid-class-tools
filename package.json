@@ -2,7 +2,7 @@
     "name": "mermaid-class-tools",
     "displayName": "%displayName%",
     "description": "%description%",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "engines": {
         "vscode": "^1.70.0"
     },
@@ -86,7 +86,7 @@
                         "onChange",
                         "onSave"
                     ],
-                    "default": "onChange",
+                    "default": "onSave",
                     "description": "%config.diagnosticsTriggerMode.description%",
                     "enumDescriptions": [
                         "%config.diagnosticsTriggerMode.onChange%",

@@ -32,5 +32,5 @@ export function getDiagnosticsValidationMode(): DiagnosticsValidationMode {
 
 export function getDiagnosticsTriggerMode(): DiagnosticsTriggerMode {
     const config = vscode.workspace.getConfiguration(CONFIG_SECTION);
-    return config.get<DiagnosticsTriggerMode>('diagnosticsTriggerMode', 'onChange');
+    return config.get<DiagnosticsTriggerMode>('diagnosticsTriggerMode', 'onSave');
 }
