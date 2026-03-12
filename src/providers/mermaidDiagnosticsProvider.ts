@@ -200,11 +200,18 @@ async function validateCode(code: string, mode: ValidationMode): Promise<Mermaid
     let result: MermaidParseError | null = null;
     try {
         await parseWithMermaid(code);
-        if (mode === 'full') {
-            await renderWithMermaid(code);
-        }
     } catch (error) {
         result = error as MermaidParseError;
+    }
+
+    if (!result && mode === 'full') {
+        try {
+            await renderWithMermaid(code);
+        } catch (error) {
+            if (!shouldIgnoreRenderError(code, error)) {
+                result = error as MermaidParseError;
+            }
+        }
     }
 
     if (validationResultCache.size >= MAX_VALIDATION_CACHE_SIZE) {
@@ -212,6 +219,20 @@ async function validateCode(code: string, mode: ValidationMode): Promise<Mermaid
     }
     validationResultCache.set(cacheKey, result);
     return result;
+}
+
+function shouldIgnoreRenderError(code: string, error: unknown): boolean {
+    const parseError = error as MermaidParseError;
+    const hasLocation = Boolean(parseError.hash?.loc);
+    if (hasLocation) {
+        return false;
+    }
+
+    return hasJapaneseText(code);
+}
+
+function hasJapaneseText(value: string): boolean {
+    return /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]/u.test(value);
 }
 
 async function renderWithMermaid(code: string): Promise<void> {
