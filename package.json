@@ -2,7 +2,7 @@
     "name": "mermaid-class-tools",
     "displayName": "%displayName%",
     "description": "%description%",
-    "version": "0.2.4",
+    "version": "0.2.5",
     "engines": {
         "vscode": "^1.70.0"
     },

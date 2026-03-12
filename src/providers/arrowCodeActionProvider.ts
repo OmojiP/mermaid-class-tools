@@ -4,6 +4,7 @@ import { LocaleMessages, MermaidDiagramType } from '../i18n/messages';
 import { getDiagramTypeAtPosition } from '../utils/mermaidContext';
 
 const SEQUENCE_ARROWS = ['-->>', '--x', '--)', '->>', '-->', '->', '-x', '-)'];
+const NODE_TOKEN_PATTERN = '[\\p{L}_][\\p{L}\\p{N}_.-]*';
 
 export function createArrowCodeActionProvider(messages: LocaleMessages): vscode.CodeActionProvider {
     return {
@@ -128,8 +129,8 @@ function createSwapPositionsText(text: string, arrow: string, replacementArrow: 
     const leftSegment = text.slice(0, arrowIndex);
     const rightSegment = text.slice(arrowIndex + arrow.length);
 
-    const leftMatch = leftSegment.match(/^(.*?)([A-Za-z_][\w.-]*)\s*$/);
-    const rightMatch = rightSegment.match(/^\s*([A-Za-z_][\w.-]*)([\s\S]*)$/);
+    const leftMatch = leftSegment.match(new RegExp(`^(.*?)(${NODE_TOKEN_PATTERN})\\s*$`, 'u'));
+    const rightMatch = rightSegment.match(new RegExp(`^\\s*(${NODE_TOKEN_PATTERN})([\\s\\S]*)$`, 'u'));
     if (!leftMatch || !rightMatch) {
         return undefined;
     }
