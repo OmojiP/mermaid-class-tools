@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.5] - 2026-03-12
+
+### Fixed
+
+- Mermaid内に日本語を含む場合に、問題がないのに parse/render 診断で下線が引かれることがある不具合を修正。
+  - Fixed an issue where diagnostics could underline valid Mermaid blocks when Japanese text was included.
+- 矢印反転（位置関係を逆転, 関係方向を保存）で、日本語を含むノード名が正しく入れ替わらない不具合を修正。
+  - Fixed an issue where node swapping with keep-direction did not correctly handle node names containing Japanese text.
+- 日本語を含むノード名を使った行で、矢印反転のクイックアクションが表示されないことがある不具合を修正。
+  - Fixed an issue where arrow-reversal quick actions could be unavailable on lines with node names containing Japanese text.
+
 ## [0.2.4] - 2026-03-09
 
 ### Changed

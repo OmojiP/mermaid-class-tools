@@ -27,12 +27,33 @@ classDiagram
     MyNamespace --> User
 ```
 
+```mermaid
+classDiagram
+    namespace MyNamespace {
+        class User
+        class Order
+    }
+    User --> Order
+    あ --> User
+    ア --> User
+    漢 --> User
+
+    abc --> xy乙 : aa
+```
+
 ## 2) sequenceDiagram
 
 ```mermaid
 sequenceDiagram
     Alice->>Bob: Hello Bob
     Bob -->> Alice: Hi Alice
+```
+
+```mermaid
+sequenceDiagram
+    ありす->>ボブ: こんにちはボブ
+    ボブ -->> ありす: こんにちはありす
+    ありす->>ＢＯＢ: こんにちはＢＯＢ
 ```
 
 ```mermaid
@@ -51,6 +72,21 @@ sequenceDiagram
 flowchart TD
     A --> B
     B --> C
+```
+
+```mermaid
+flowchart TD
+    A --> B
+    B --> Cあ
+    Cあ --> あア漢
+```
+
+
+```mermaid
+graph TD
+    A --> B
+    B --> Cあ
+    Cあ --> あ
 ```
 
 ```mermaid
