@@ -13,5 +13,9 @@
     "config.diagnosticsValidationMode.light": "軽量検証（parseのみ）。編集中の動作が軽くなります。",
     "config.diagnosticsTriggerMode.description": "診断を実行するタイミングを選択します。",
     "config.diagnosticsTriggerMode.onChange": "変更時（および保存時）に実行します。",
-    "config.diagnosticsTriggerMode.onSave": "保存時のみ実行します。編集時の重さを軽減します。"
+    "config.diagnosticsTriggerMode.onSave": "保存時のみ実行します。編集時の重さを軽減します。",
+    "config.arrowLanguage.description": "ホバーとインテリセンスの矢印役割説明の言語を選択します。",
+    "config.arrowLanguage.system": "VS Code の表示言語を使用します。",
+    "config.arrowLanguage.ja": "常に日本語を使用します。",
+    "config.arrowLanguage.en": "常に英語を使用します。"
 }

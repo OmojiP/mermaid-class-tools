@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.6] - 2026-05-25
+
+### Changed
+
+- classDiagram の Composition 矢印（`--*` / `*--`）の日本語説明を「構成(合成)（ライフサイクルを共有する強い所有）」に更新。
+  - Updated Japanese description for classDiagram Composition arrows (`--*` / `*--`) to "構成(合成)（ライフサイクルを共有する強い所有）".
+- 矢印役割説明の表示言語設定 `mermaidClassTools.arrowLanguage`（`system` / `ja` / `en`）を追加。
+  - Added `mermaidClassTools.arrowLanguage` (`system` / `ja` / `en`) to control arrow role description language.
+
 ## [0.2.5] - 2026-03-12
 
 ### Fixed

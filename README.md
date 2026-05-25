@@ -54,7 +54,8 @@ mermaidを使用していると矢印の種類が多く、特に初心者はど�
 
 - 矢印にカーソルを重ねると矢印の役割説明が表示されます
 - 役割の説明は、矢印の種類や図の種類に応じて切り替わります
-- 表示言語はVS Codeの表示言語に合わせて日本語/英語で切り替わります
+- 表示言語は既定でVS Codeの表示言語に合わせて日本語/英語で切り替わります
+- `mermaidClassTools.arrowLanguage` で役割説明の言語を `system` / `ja` / `en` から選択できます
 
 ### 4.矢印のインテリセンス
 
@@ -99,6 +100,7 @@ VS Codeの設定で機能を個別に停止できます。
 - `mermaidClassTools.enableDiagnostics` : Mermaidコードブロックの診断
 - `mermaidClassTools.diagnosticsValidationMode` : 診断方式（`full` / `light`）
 - `mermaidClassTools.diagnosticsTriggerMode` : 診断タイミング（`onChange` / `onSave`、デフォルト: `onSave`）
+- `mermaidClassTools.arrowLanguage` : 矢印役割説明の言語（`system` / `ja` / `en`、デフォルト: `system`）
 
 ## 適用例
 

@@ -2,7 +2,7 @@
     "name": "mermaid-class-tools",
     "displayName": "%displayName%",
     "description": "%description%",
-    "version": "0.2.5",
+    "version": "0.2.6",
     "engines": {
         "vscode": "^1.70.0"
     },
@@ -91,6 +91,21 @@
                     "enumDescriptions": [
                         "%config.diagnosticsTriggerMode.onChange%",
                         "%config.diagnosticsTriggerMode.onSave%"
+                    ]
+                },
+                "mermaidClassTools.arrowLanguage": {
+                    "type": "string",
+                    "enum": [
+                        "system",
+                        "ja",
+                        "en"
+                    ],
+                    "default": "system",
+                    "description": "%config.arrowLanguage.description%",
+                    "enumDescriptions": [
+                        "%config.arrowLanguage.system%",
+                        "%config.arrowLanguage.ja%",
+                        "%config.arrowLanguage.en%"
                     ]
                 }
             }

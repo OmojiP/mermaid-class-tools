@@ -13,5 +13,9 @@
     "config.diagnosticsValidationMode.light": "Light validation (parse only). Faster while editing.",
     "config.diagnosticsTriggerMode.description": "Select when diagnostics should run.",
     "config.diagnosticsTriggerMode.onChange": "On change (and save). Runs while editing.",
-    "config.diagnosticsTriggerMode.onSave": "On save only. Reduces editor lag."
+    "config.diagnosticsTriggerMode.onSave": "On save only. Reduces editor lag.",
+    "config.arrowLanguage.description": "Language for arrow role descriptions in hover and IntelliSense.",
+    "config.arrowLanguage.system": "Use VS Code display language.",
+    "config.arrowLanguage.ja": "Always use Japanese.",
+    "config.arrowLanguage.en": "Always use English."
 }

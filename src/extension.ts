@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { CONFIG_SECTION, getFeatureFlags } from './config';
+import { CONFIG_SECTION, getArrowLanguage, getFeatureFlags } from './config';
 import { getLocaleMessages } from './i18n/messages';
 import { createArrowCodeActionProvider } from './providers/arrowCodeActionProvider';
 import { createArrowCompletionProvider } from './providers/arrowCompletionProvider';
@@ -13,7 +13,9 @@ export function activate(context: vscode.ExtensionContext): void {
     const registerFeatures = (): void => {
         disposeFeatureDisposables(featureDisposables);
 
-        const messages = getLocaleMessages(vscode.env.language);
+        const arrowLanguage = getArrowLanguage();
+        const messageLanguage = arrowLanguage === 'system' ? vscode.env.language : arrowLanguage;
+        const messages = getLocaleMessages(messageLanguage);
         const featureFlags = getFeatureFlags();
 
         if (featureFlags.enableRename) {
