@@ -12,6 +12,7 @@ export type FeatureFlags = {
 
 export type DiagnosticsValidationMode = 'full' | 'light';
 export type DiagnosticsTriggerMode = 'onChange' | 'onSave';
+export type ArrowLanguage = 'system' | 'ja' | 'en';
 
 export function getFeatureFlags(): FeatureFlags {
     const config = vscode.workspace.getConfiguration(CONFIG_SECTION);
@@ -33,4 +34,9 @@ export function getDiagnosticsValidationMode(): DiagnosticsValidationMode {
 export function getDiagnosticsTriggerMode(): DiagnosticsTriggerMode {
     const config = vscode.workspace.getConfiguration(CONFIG_SECTION);
     return config.get<DiagnosticsTriggerMode>('diagnosticsTriggerMode', 'onSave');
+}
+
+export function getArrowLanguage(): ArrowLanguage {
+    const config = vscode.workspace.getConfiguration(CONFIG_SECTION);
+    return config.get<ArrowLanguage>('arrowLanguage', 'system');
 }

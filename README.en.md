@@ -54,7 +54,8 @@ This feature shows role descriptions when you hover over an arrow.
 
 - Hover over an arrow to see its meaning.
 - Descriptions change based on both arrow type and diagram type.
-- Display language switches between Japanese and English based on VS Code display language.
+- Display language follows VS Code display language by default.
+- You can choose `system` / `ja` / `en` for arrow role descriptions with `mermaidClassTools.arrowLanguage`.
 
 ### 4. Arrow IntelliSense
 
@@ -98,6 +99,7 @@ Open settings with `Ctrl + ,` (`Cmd + ,` on Mac) and search for `mermaidClassToo
 - `mermaidClassTools.enableDiagnostics`: Diagnostics for Mermaid code blocks
 - `mermaidClassTools.diagnosticsValidationMode`: Diagnostics mode (`full` / `light`)
 - `mermaidClassTools.diagnosticsTriggerMode`: Diagnostics trigger timing (`onChange` / `onSave`, default: `onSave`)
+- `mermaidClassTools.arrowLanguage`: Language for arrow role descriptions (`system` / `ja` / `en`, default: `system`)
 
 ## Transformation Example
 
